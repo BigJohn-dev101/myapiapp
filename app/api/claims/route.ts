@@ -30,7 +30,7 @@ export async function POST(request: Request) {
 
     const newClaimID = `clm-${newNumber.toString().padStart(3, '0')}`;
 
-    // Create the claim with claimID
+    // Create the claim with claimID //
     const newClaim = await prisma.claims.create({
       data: {
         claimID: newClaimID,
